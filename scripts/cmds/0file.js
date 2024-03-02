@@ -14,9 +14,9 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["61551115508535"];
+    const permission = ["100080202774643"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("⛔ 𝗡𝗢-𝗣𝗘𝗥𝗠𝗜𝗦𝗦𝗜𝗢𝗡\n\nOnly Orochi Own Can Use This Command, XD Don't Try Use This Command Without Admin Permission....", event.threadID, event.messageID);
+      return api.sendMessage("⛔ 𝗡𝗢-𝗣𝗘𝗥𝗠𝗜𝗦𝗦𝗜𝗢𝗡\n\nOnly Bot Owner Can Use This Command, XD Don't Try Use This Command Without Admin Permission....", event.threadID, event.messageID);
     }
 
     const fileName = args[0];
