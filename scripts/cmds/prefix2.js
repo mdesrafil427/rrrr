@@ -3,7 +3,7 @@ const { utils } = global;
 
 module.exports = {
   config: {
-    name: "prefix",
+    name: "prefix2",
     version: "1.3",
     author: "NTKhang",
     countDown: 5,
@@ -102,7 +102,7 @@ module.exports = {
       body: `🈷️${name}🈷️` + getLang("myPrefix", global.GoatBot.config.prefix, utils.getPrefix(event.threadID)),
         };
     if (event.body && event.body.toLowerCase() === 
-        "prefix")
+        "prefix2")
       return () => {
         return message.reply(xyrene);
       };
